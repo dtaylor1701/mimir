@@ -2,6 +2,6 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "self:Mimir.xcodeproj">
+      location = "self:/Users/daves/repos/Mimir/Mimir.xcodeproj">
    </FileRef>
 </Workspace>

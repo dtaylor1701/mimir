@@ -15,6 +15,7 @@
 		74E80E2E2048EFB200D84453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74E80E2C2048EFB200D84453 /* LaunchScreen.storyboard */; };
 		74E80E392048EFB200D84453 /* MimirTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E80E382048EFB200D84453 /* MimirTests.swift */; };
 		74E80E442048EFB200D84453 /* MimirUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E80E432048EFB200D84453 /* MimirUITests.swift */; };
+		74E80E93204B35B900D84453 /* DecisionEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E80E94204B35B900D84453 /* DecisionEngine.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,8 @@
 		74E80E3F2048EFB200D84453 /* MimirUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MimirUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E80E432048EFB200D84453 /* MimirUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MimirUITests.swift; sourceTree = "<group>"; };
 		74E80E452048EFB200D84453 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		74E80E892048FAF700D84453 /* DecisionEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DecisionEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74E80E94204B35B900D84453 /* DecisionEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DecisionEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +59,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74E80E93204B35B900D84453 /* DecisionEngine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -83,6 +87,7 @@
 				74E80E372048EFB200D84453 /* MimirTests */,
 				74E80E422048EFB200D84453 /* MimirUITests */,
 				74E80E1E2048EFB200D84453 /* Products */,
+				74E80E872048FAF700D84453 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -126,6 +131,15 @@
 				74E80E452048EFB200D84453 /* Info.plist */,
 			);
 			path = MimirUITests;
+			sourceTree = "<group>";
+		};
+		74E80E872048FAF700D84453 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				74E80E94204B35B900D84453 /* DecisionEngine.framework */,
+				74E80E892048FAF700D84453 /* DecisionEngine.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -431,6 +445,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7826XAREP;
 				INFOPLIST_FILE = Mimir/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HyperElephant.com.Mimir;
@@ -445,6 +460,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = J7826XAREP;
 				INFOPLIST_FILE = Mimir/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.HyperElephant.com.Mimir;
