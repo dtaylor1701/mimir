@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		74E80E212048EFB200D84453 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E80E202048EFB200D84453 /* AppDelegate.swift */; };
-		74E80E232048EFB200D84453 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E80E222048EFB200D84453 /* ViewController.swift */; };
+		74E80E232048EFB200D84453 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E80E222048EFB200D84453 /* MainViewController.swift */; };
 		74E80E262048EFB200D84453 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74E80E242048EFB200D84453 /* Main.storyboard */; };
 		74E80E292048EFB200D84453 /* Mimir.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 74E80E272048EFB200D84453 /* Mimir.xcdatamodeld */; };
 		74E80E2B2048EFB200D84453 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 74E80E2A2048EFB200D84453 /* Assets.xcassets */; };
@@ -38,7 +38,7 @@
 /* Begin PBXFileReference section */
 		74E80E1D2048EFB200D84453 /* Mimir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mimir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E80E202048EFB200D84453 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		74E80E222048EFB200D84453 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		74E80E222048EFB200D84453 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		74E80E252048EFB200D84453 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		74E80E282048EFB200D84453 /* Mimir.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Mimir.xcdatamodel; sourceTree = "<group>"; };
 		74E80E2A2048EFB200D84453 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -105,7 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				74E80E202048EFB200D84453 /* AppDelegate.swift */,
-				74E80E222048EFB200D84453 /* ViewController.swift */,
+				74E80E222048EFB200D84453 /* MainViewController.swift */,
 				74E80E242048EFB200D84453 /* Main.storyboard */,
 				74E80E2A2048EFB200D84453 /* Assets.xcassets */,
 				74E80E2C2048EFB200D84453 /* LaunchScreen.storyboard */,
@@ -276,7 +276,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				74E80E232048EFB200D84453 /* ViewController.swift in Sources */,
+				74E80E232048EFB200D84453 /* MainViewController.swift in Sources */,
 				74E80E212048EFB200D84453 /* AppDelegate.swift in Sources */,
 				74E80E292048EFB200D84453 /* Mimir.xcdatamodeld in Sources */,
 			);

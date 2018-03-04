@@ -11,15 +11,15 @@ import Foundation
 
 public class DecisionEngine{
     
-    private var activities: [Activity]
+    private var user: User
     
-    public init(activities: [Activity]) {
-        self.activities = activities
+    public init(user: User) {
+        self.user = user
     }
 
     public func suggestActivity(freeTime: Double) -> Activity? {
         var possible = [Activity]()
-        for activity in self.activities{
+        for activity in self.user.activities{
             if(activity.duration <= freeTime){
                 possible.append(activity)
             }
@@ -27,6 +27,4 @@ public class DecisionEngine{
         
         return possible.random()
     }
-    
-    public func addActivity(){}
 }

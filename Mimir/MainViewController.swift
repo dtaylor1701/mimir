@@ -19,7 +19,8 @@ class ViewController: UIViewController {
     }
     
     var freeTime = -1.0
-    let engine: DecisionEngine = DecisionEngine(activities: Helpers.TestActvities())
+    let user: User = User()
+    var engine: DecisionEngine! = nil
     
     @IBAction func directPressed(_ sender: Any) {
         
@@ -37,7 +38,9 @@ class ViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        engine = DecisionEngine(user: user)
         suggestionLabel.text = "Need some direction?"
+        inputField.isHidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -51,12 +54,17 @@ class ViewController: UIViewController {
     
     func getFreeTimeFromUser(){
         suggestionLabel.text = "First, could you tell me how much time you have?"
+        inputField.placeholder = "Minutes"
+        inputField.isHidden = false
     }
     
     func setFreeTimeFromUser(input: String) {
         if let time = Double(input) {
+            inputField.isHidden = true
             freeTime = time
             self.view.endEditing(true);
+            suggestionLabel.text = "Got it."
+            inputField.text = ""
         } else {
             suggestionLabel.text = "I'm not sure I understand what you mean."
         }

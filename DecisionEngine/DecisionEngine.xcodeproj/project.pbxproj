@@ -14,6 +14,7 @@
 		74E80E8E2048FB3100D84453 /* Activity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E80E8B2048FB3100D84453 /* Activity.swift */; };
 		74E80E8F2048FB3100D84453 /* DecisionEngine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E80E8C2048FB3100D84453 /* DecisionEngine.swift */; };
 		74E80E92204B2B0B00D84453 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E80E91204B2B0B00D84453 /* Extensions.swift */; };
+		74E80E96204B53A600D84453 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E80E95204B53A600D84453 /* User.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -37,6 +38,7 @@
 		74E80E8B2048FB3100D84453 /* Activity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Activity.swift; sourceTree = "<group>"; };
 		74E80E8C2048FB3100D84453 /* DecisionEngine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DecisionEngine.swift; sourceTree = "<group>"; };
 		74E80E91204B2B0B00D84453 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		74E80E95204B53A600D84453 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,6 +87,7 @@
 				74E80E8A2048FB3000D84453 /* Helpers.swift */,
 				74E80E6A2048FA6C00D84453 /* DecisionEngine.h */,
 				74E80E6B2048FA6C00D84453 /* Info.plist */,
+				74E80E95204B53A600D84453 /* User.swift */,
 			);
 			path = DecisionEngine;
 			sourceTree = "<group>";
@@ -220,6 +223,7 @@
 				74E80E8E2048FB3100D84453 /* Activity.swift in Sources */,
 				74E80E8D2048FB3100D84453 /* Helpers.swift in Sources */,
 				74E80E8F2048FB3100D84453 /* DecisionEngine.swift in Sources */,
+				74E80E96204B53A600D84453 /* User.swift in Sources */,
 				74E80E92204B2B0B00D84453 /* Extensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
