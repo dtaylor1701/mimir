@@ -9,9 +9,11 @@
 import Foundation
 
 public class User {
-    internal var activities: [Activity]
+    public var activities: [Activity]
+    public var state : Feel
 
     public init() {
         activities = Helpers.testActvities()
+        state = Feel.Neutral()
     }
 }

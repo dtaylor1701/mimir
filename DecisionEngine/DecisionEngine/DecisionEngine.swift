@@ -20,7 +20,11 @@ public class DecisionEngine{
     public func suggestActivity(freeTime: Double) -> Activity? {
         var possible = [Activity]()
         for activity in self.user.activities{
-            if(activity.duration <= freeTime){
+            let hasTime = activity.duration <= freeTime
+            let resultFeel = user.state + activity.impact
+            let willImprove = user.state.aggregate() < resultFeel.aggregate()
+            if(hasTime && willImprove)
+            {
                 possible.append(activity)
             }
         }

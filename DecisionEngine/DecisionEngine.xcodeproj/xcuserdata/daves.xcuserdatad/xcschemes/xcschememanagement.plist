@@ -7,7 +7,20 @@
 		<key>DecisionEngine.xcscheme</key>
 		<dict>
 			<key>orderHint</key>
-			<integer>1</integer>
+			<integer>0</integer>
+		</dict>
+	</dict>
+	<key>SuppressBuildableAutocreation</key>
+	<dict>
+		<key>74E80E662048FA6C00D84453</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>74E80E6F2048FA6D00D84453</key>
+		<dict>
+			<key>primary</key>
+			<true/>
 		</dict>
 	</dict>
 </dict>

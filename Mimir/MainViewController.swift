@@ -15,18 +15,30 @@ class ViewController: UIViewController {
     @IBOutlet weak var inputField: UITextField!
     
     @IBAction func returnPressed(_ sender: Any) {
-        setFreeTimeFromUser(input: inputField.text!)
+        if(freeTime == -1.0){
+            setFreeTimeFromUser(input: inputField.text!)
+        } else if (!stateUpdated){
+            setStateFromUser(input: inputField.text!)
+        }
     }
     
     var freeTime = -1.0
     let user: User = User()
     var engine: DecisionEngine! = nil
+    var interpreter: EmotionInterpreter! = nil
+    
+    var stateUpdated = false
     
     @IBAction func directPressed(_ sender: Any) {
         
         if(freeTime < 0){
             getFreeTimeFromUser()
-        } else {
+        }
+        else if (!stateUpdated){
+            getStateFromUser()
+        }
+        else
+        {
             if let activity = engine.suggestActivity(freeTime: freeTime){
                 suggestionLabel.text = activity.name
             } else {
@@ -39,6 +51,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         engine = DecisionEngine(user: user)
+        interpreter = EmotionInterpreter(emotions: Helpers.testEmotions())
         suggestionLabel.text = "Need some direction?"
         inputField.isHidden = true
     }
@@ -52,7 +65,7 @@ class ViewController: UIViewController {
         self.view.endEditing(true);
     }
     
-    func getFreeTimeFromUser(){
+    func getFreeTimeFromUser() {
         suggestionLabel.text = "First, could you tell me how much time you have?"
         inputField.placeholder = "Minutes"
         inputField.isHidden = false
@@ -62,7 +75,7 @@ class ViewController: UIViewController {
         if let time = Double(input) {
             inputField.isHidden = true
             freeTime = time
-            self.view.endEditing(true);
+            self.view.endEditing(true)
             suggestionLabel.text = "Got it."
             inputField.text = ""
         } else {
@@ -70,6 +83,23 @@ class ViewController: UIViewController {
         }
     }
     
+    func getStateFromUser() {
+        suggestionLabel.text = "How are you feeling?"
+        inputField.placeholder = "Emotion"
+        inputField.isHidden = false
+    }
+    func setStateFromUser(input: String) {
+        if let feel = interpreter.getFeel(name: input) {
+            inputField.isHidden = true
+            user.state = feel
+            self.view.endEditing(true)
+            suggestionLabel.text = "Got it."
+            inputField.text = ""
+            stateUpdated = true
+        } else {
+            suggestionLabel.text = "I'm not sure I understand what you mean."
+        }
+    }
 
 }
 

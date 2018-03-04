@@ -11,8 +11,11 @@ import XCTest
 
 class DecisionEngineTests: XCTestCase {
     
+    var engine: DecisionEngine!
+    
     override func setUp() {
         super.setUp()
+        engine = DecisionEngine(user: User())
         // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
@@ -33,9 +36,14 @@ class DecisionEngineTests: XCTestCase {
         }
     }
     
+    func testSuggestActivityNotEnoughTime() {
+        let activity = engine.suggestActivity(freeTime: 5)
+        XCTAssert(activity == nil, "Returning actvity that takes too much time")
+    }
     
-    func suggestActivity(){
-        XCTAssert(Bool, <#T##message: String##String#>)
+    func testSuggestActivity() {
+        let activity = engine.suggestActivity(freeTime: 20)
+        XCTAssert(activity?.name == "drink water", "Not returning the right activity")
     }
     
 }
