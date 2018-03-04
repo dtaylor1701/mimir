@@ -2,9 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
-      location = "group:/Users/daves/repos/Mimir/DecisionEngine/DecisionEngine.xcodeproj">
+      location = "group:Mimir/Mimir.xcodeproj">
    </FileRef>
    <FileRef
-      location = "group:Mimir.xcodeproj">
+      location = "group:/Users/daves/repos/Mimir/DecisionEngine/DecisionEngine.xcodeproj">
    </FileRef>
 </Workspace>
