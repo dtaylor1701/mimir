@@ -70,7 +70,6 @@ class ViewController: UIViewController {
         inputField.placeholder = "Minutes"
         inputField.isHidden = false
     }
-    
     func setFreeTimeFromUser(input: String) {
         if let time = Double(input) {
             inputField.isHidden = true
@@ -82,7 +81,7 @@ class ViewController: UIViewController {
             suggestionLabel.text = "I'm not sure I understand what you mean."
         }
     }
-    
+
     func getStateFromUser() {
         suggestionLabel.text = "How are you feeling?"
         inputField.placeholder = "Emotion"

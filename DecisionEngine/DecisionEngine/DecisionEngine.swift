@@ -22,7 +22,7 @@ public class DecisionEngine{
         for activity in self.user.activities{
             let hasTime = activity.duration <= freeTime
             let resultFeel = user.state + activity.impact
-            let willImprove = user.state.aggregate() < resultFeel.aggregate()
+            let willImprove = user.state.aggregate() <= resultFeel.aggregate()
             if(hasTime && willImprove)
             {
                 possible.append(activity)

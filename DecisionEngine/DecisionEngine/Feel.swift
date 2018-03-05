@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Feel {
+public struct Feel : Codable {
     
     /// Happiness and/or pleasure. A negative value woudl represent unhappiness.
     let happy: Double

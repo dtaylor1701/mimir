@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Emotion {
+public struct Emotion : Codable {
     public var name: String
     /// The feeling of being this emotion
     public var feel: Feel
