@@ -8,15 +8,15 @@
 
 import Foundation
 
-public struct Feel {
+public struct Feel : Codable {
     
     /// Happiness and/or pleasure. A negative value woudl represent unhappiness.
-    let happy: Double
+    var happy: Double
     
     /// The feeling of accomplishment. Sedentary or frivolous things would have a negative value.
-    let productive: Double
+    var productive: Double
     
-    public func aggregate() -> Double {
+    public func average() -> Double {
         return (happy + productive) / 2
     }
     
