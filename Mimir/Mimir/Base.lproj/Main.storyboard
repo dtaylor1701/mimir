@@ -32,7 +32,7 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Nos-O5-BhM">
-                                <rect key="frame" x="16" y="328" width="343" height="30"/>
+                                <rect key="frame" x="16" y="328" width="289" height="30"/>
                                 <nil key="textColor"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
@@ -40,15 +40,28 @@
                                     <action selector="returnPressed:" destination="BYZ-38-t0r" eventType="primaryActionTriggered" id="hYY-3C-YWp"/>
                                 </connections>
                             </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PzJ-1f-68H">
+                                <rect key="frame" x="313" y="328.5" width="46" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="pDI-1y-Q7N"/>
+                                    <constraint firstAttribute="width" constant="46" id="xCK-wQ-8Nc"/>
+                                </constraints>
+                                <state key="normal" title="Send"/>
+                                <connections>
+                                    <action selector="sendPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cle-5H-Mkk"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="Nos-O5-BhM" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="3ik-BU-80J"/>
                             <constraint firstItem="zfQ-ua-rSe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="132" id="7tV-P3-rqK"/>
+                            <constraint firstItem="Nos-O5-BhM" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="CQS-dd-rT4"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PzJ-1f-68H" secondAttribute="trailing" constant="16" id="J9e-RM-zo0"/>
+                            <constraint firstItem="Nos-O5-BhM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="LqB-iG-DHt"/>
                             <constraint firstItem="inD-M3-gXB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ShE-mi-f0L"/>
-                            <constraint firstItem="Nos-O5-BhM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="16" id="efK-z1-Nn8"/>
                             <constraint firstItem="zfQ-ua-rSe" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="fqC-aI-4bT"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Nos-O5-BhM" secondAttribute="trailing" constant="16" id="kXi-Vl-AYI"/>
+                            <constraint firstItem="PzJ-1f-68H" firstAttribute="leading" secondItem="Nos-O5-BhM" secondAttribute="trailing" constant="8" id="jno-gY-Agf"/>
+                            <constraint firstItem="PzJ-1f-68H" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" id="t92-m2-NAy"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="inD-M3-gXB" secondAttribute="bottom" constant="78" id="zdg-Yy-trC"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>

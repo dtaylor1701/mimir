@@ -14,14 +14,6 @@ class ViewController: UIViewController {
     @IBOutlet weak var suggestionLabel: UILabel!
     @IBOutlet weak var inputField: UITextField!
     
-    @IBAction func returnPressed(_ sender: Any) {
-        if(freeTime == -1.0){
-            setFreeTimeFromUser(input: inputField.text!)
-        } else if (!stateUpdated){
-            setStateFromUser(input: inputField.text!)
-        }
-    }
-    
     var freeTime = -1.0
     let user: User = User()
     var engine: DecisionEngine! = nil
@@ -30,7 +22,11 @@ class ViewController: UIViewController {
     var stateUpdated = false
     
     @IBAction func directPressed(_ sender: Any) {
+        getInfoOrMakeSuggestion()
         
+    }
+    
+    func getInfoOrMakeSuggestion() {
         if(freeTime < 0){
             getFreeTimeFromUser()
         }
@@ -45,15 +41,42 @@ class ViewController: UIViewController {
                 suggestionLabel.text = "I'm as indicisive as you at the moment..."
             }
         }
-        
+    }
+    
+    @IBAction func returnPressed(_ sender: Any) {
+        handleInput()
+    }
+    
+    @IBAction func sendPressed(_ sender: Any) {
+        handleInput()
+    }
+    
+    func handleInput() {
+        if(freeTime == -1.0){
+            setFreeTimeFromUser(input: inputField.text!)
+            getInfoOrMakeSuggestion()
+        } else if (!stateUpdated){
+            setStateFromUser(input: inputField.text!)
+            getInfoOrMakeSuggestion()
+        } else {
+            self.view.endEditing(true)
+        }
     }
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        if let activities = Store.retrieveActivtites() {
+            user.activities = activities
+        }
+        if let emotions = Store.retrieveEmotions() {
+            interpreter = EmotionInterpreter(emotions: emotions)
+        } else {
+            interpreter = EmotionInterpreter(emotions: Helpers.testEmotions())
+        }
+        
         engine = DecisionEngine(user: user)
-        interpreter = EmotionInterpreter(emotions: Helpers.testEmotions())
         suggestionLabel.text = "Need some direction?"
-        inputField.isHidden = true
     }
 
     override func didReceiveMemoryWarning() {
@@ -66,37 +89,34 @@ class ViewController: UIViewController {
     }
     
     func getFreeTimeFromUser() {
-        suggestionLabel.text = "First, could you tell me how much time you have?"
+        suggestionLabel.text = "How much time you have?"
         inputField.placeholder = "Minutes"
         inputField.isHidden = false
     }
     func setFreeTimeFromUser(input: String) {
         if let time = Double(input) {
-            inputField.isHidden = true
             freeTime = time
-            self.view.endEditing(true)
             suggestionLabel.text = "Got it."
             inputField.text = ""
         } else {
             suggestionLabel.text = "I'm not sure I understand what you mean."
+            inputField.text = ""
         }
     }
 
     func getStateFromUser() {
         suggestionLabel.text = "How are you feeling?"
         inputField.placeholder = "Emotion"
-        inputField.isHidden = false
     }
     func setStateFromUser(input: String) {
         if let feel = interpreter.getFeel(name: input) {
-            inputField.isHidden = true
             user.state = feel
-            self.view.endEditing(true)
             suggestionLabel.text = "Got it."
             inputField.text = ""
             stateUpdated = true
         } else {
             suggestionLabel.text = "I'm not sure I understand what you mean."
+            inputField.text = ""
         }
     }
 
