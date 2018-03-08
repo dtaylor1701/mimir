@@ -88,6 +88,12 @@ class ViewController: UIViewController {
         self.view.endEditing(true);
     }
     
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if let addActivityController = segue.destination as? AddActivityViewController {
+            addActivityController.user = self.user
+        }
+    }
+    
     func getFreeTimeFromUser() {
         suggestionLabel.text = "How much time you have?"
         inputField.placeholder = "Minutes"

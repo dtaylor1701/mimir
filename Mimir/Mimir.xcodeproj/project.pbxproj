@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		742C58C02050C6AA00149A87 /* AddActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C58BF2050C6AA00149A87 /* AddActivityViewController.swift */; };
 		74457D6B204CEB34005CEB3E /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74457D6A204CEB34005CEB3E /* Store.swift */; };
 		74E80E212048EFB200D84453 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E80E202048EFB200D84453 /* AppDelegate.swift */; };
 		74E80E232048EFB200D84453 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E80E222048EFB200D84453 /* MainViewController.swift */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		742C58BF2050C6AA00149A87 /* AddActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityViewController.swift; sourceTree = "<group>"; };
 		74457D6A204CEB34005CEB3E /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		74E80E1D2048EFB200D84453 /* Mimir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mimir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E80E202048EFB200D84453 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				74E80E2F2048EFB200D84453 /* Info.plist */,
 				74E80E272048EFB200D84453 /* Mimir.xcdatamodeld */,
 				74457D6A204CEB34005CEB3E /* Store.swift */,
+				742C58BF2050C6AA00149A87 /* AddActivityViewController.swift */,
 			);
 			path = Mimir;
 			sourceTree = "<group>";
@@ -282,6 +285,7 @@
 				74E80E232048EFB200D84453 /* MainViewController.swift in Sources */,
 				74E80E212048EFB200D84453 /* AppDelegate.swift in Sources */,
 				74E80E292048EFB200D84453 /* Mimir.xcdatamodeld in Sources */,
+				742C58C02050C6AA00149A87 /* AddActivityViewController.swift in Sources */,
 				74457D6B204CEB34005CEB3E /* Store.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
