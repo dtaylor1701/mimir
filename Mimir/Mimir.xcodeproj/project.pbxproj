@@ -8,6 +8,11 @@
 
 /* Begin PBXBuildFile section */
 		742C58C02050C6AA00149A87 /* AddActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C58BF2050C6AA00149A87 /* AddActivityViewController.swift */; };
+		742C58C220521C1500149A87 /* ActivitesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C58C120521C1500149A87 /* ActivitesViewController.swift */; };
+		742C58C420521C2400149A87 /* EmotionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C58C320521C2400149A87 /* EmotionsViewController.swift */; };
+		742C58C620521C3D00149A87 /* AddEmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C58C520521C3D00149A87 /* AddEmotionViewController.swift */; };
+		742C58C82052228800149A87 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C58C72052228800149A87 /* RootTabBarController.swift */; };
+		742C58CA205222E800149A87 /* Mimir.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C58C9205222E800149A87 /* Mimir.swift */; };
 		74457D6B204CEB34005CEB3E /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74457D6A204CEB34005CEB3E /* Store.swift */; };
 		74E80E212048EFB200D84453 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E80E202048EFB200D84453 /* AppDelegate.swift */; };
 		74E80E232048EFB200D84453 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E80E222048EFB200D84453 /* MainViewController.swift */; };
@@ -39,6 +44,11 @@
 
 /* Begin PBXFileReference section */
 		742C58BF2050C6AA00149A87 /* AddActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityViewController.swift; sourceTree = "<group>"; };
+		742C58C120521C1500149A87 /* ActivitesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitesViewController.swift; sourceTree = "<group>"; };
+		742C58C320521C2400149A87 /* EmotionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionsViewController.swift; sourceTree = "<group>"; };
+		742C58C520521C3D00149A87 /* AddEmotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmotionViewController.swift; sourceTree = "<group>"; };
+		742C58C72052228800149A87 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
+		742C58C9205222E800149A87 /* Mimir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mimir.swift; sourceTree = "<group>"; };
 		74457D6A204CEB34005CEB3E /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
 		74E80E1D2048EFB200D84453 /* Mimir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mimir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E80E202048EFB200D84453 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -109,14 +119,19 @@
 			isa = PBXGroup;
 			children = (
 				74E80E202048EFB200D84453 /* AppDelegate.swift */,
-				74E80E222048EFB200D84453 /* MainViewController.swift */,
 				74E80E242048EFB200D84453 /* Main.storyboard */,
+				742C58C72052228800149A87 /* RootTabBarController.swift */,
+				74E80E222048EFB200D84453 /* MainViewController.swift */,
+				742C58C120521C1500149A87 /* ActivitesViewController.swift */,
+				742C58BF2050C6AA00149A87 /* AddActivityViewController.swift */,
+				742C58C320521C2400149A87 /* EmotionsViewController.swift */,
+				742C58C520521C3D00149A87 /* AddEmotionViewController.swift */,
+				74457D6A204CEB34005CEB3E /* Store.swift */,
 				74E80E2A2048EFB200D84453 /* Assets.xcassets */,
 				74E80E2C2048EFB200D84453 /* LaunchScreen.storyboard */,
 				74E80E2F2048EFB200D84453 /* Info.plist */,
 				74E80E272048EFB200D84453 /* Mimir.xcdatamodeld */,
-				74457D6A204CEB34005CEB3E /* Store.swift */,
-				742C58BF2050C6AA00149A87 /* AddActivityViewController.swift */,
+				742C58C9205222E800149A87 /* Mimir.swift */,
 			);
 			path = Mimir;
 			sourceTree = "<group>";
@@ -282,8 +297,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				742C58CA205222E800149A87 /* Mimir.swift in Sources */,
 				74E80E232048EFB200D84453 /* MainViewController.swift in Sources */,
+				742C58C82052228800149A87 /* RootTabBarController.swift in Sources */,
+				742C58C220521C1500149A87 /* ActivitesViewController.swift in Sources */,
 				74E80E212048EFB200D84453 /* AppDelegate.swift in Sources */,
+				742C58C420521C2400149A87 /* EmotionsViewController.swift in Sources */,
+				742C58C620521C3D00149A87 /* AddEmotionViewController.swift in Sources */,
 				74E80E292048EFB200D84453 /* Mimir.xcdatamodeld in Sources */,
 				742C58C02050C6AA00149A87 /* AddActivityViewController.swift in Sources */,
 				74457D6B204CEB34005CEB3E /* Store.swift in Sources */,
