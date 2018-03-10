@@ -39,7 +39,7 @@
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
                             <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="iQT-Wh-w2X">
-                                <rect key="frame" x="22" y="249" width="255" height="30"/>
+                                <rect key="frame" x="22" y="249" width="234" height="30"/>
                                 <connections>
                                     <action selector="timeSliderChanged:" destination="BYZ-38-t0r" eventType="valueChanged" id="k5c-sX-n9g"/>
                                 </connections>
@@ -64,7 +64,7 @@
                             <constraint firstItem="iQT-Wh-w2X" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="24" id="2Gx-t0-DzI"/>
                             <constraint firstItem="iQT-Wh-w2X" firstAttribute="centerY" secondItem="Y5C-cj-pg9" secondAttribute="centerY" id="5oz-bJ-QuL"/>
                             <constraint firstItem="zfQ-ua-rSe" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="132" id="7tV-P3-rqK"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iQT-Wh-w2X" secondAttribute="trailing" constant="100" id="DW9-3e-q8q"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="iQT-Wh-w2X" secondAttribute="trailing" constant="121" id="DW9-3e-q8q"/>
                             <constraint firstItem="iQT-Wh-w2X" firstAttribute="top" secondItem="zfQ-ua-rSe" secondAttribute="bottom" constant="76" id="GCQ-wx-SWZ"/>
                             <constraint firstItem="Nos-O5-BhM" firstAttribute="top" secondItem="iQT-Wh-w2X" secondAttribute="bottom" constant="26" id="RdQ-0k-FAD"/>
                             <constraint firstItem="inD-M3-gXB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ShE-mi-f0L"/>
