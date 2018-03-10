@@ -37,7 +37,9 @@ class AddEmotionViewController: UIViewController {
         let feel = Feel(happy: happy, productive: productive)
         let newEmotion = Emotion(name: name, feel: feel)
         
-        mimir.interpreter.emotions.append(newEmotion)
+        mimir.addEmotion(newEmotion)
+        Store.storeEmotions(emotions: mimir.emotions)
+
     }
     override func viewDidLoad() {
         super.viewDidLoad()

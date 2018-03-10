@@ -19,13 +19,14 @@ class ViewController: UIViewController {
     var mimir: Mimir!
     
     @IBAction func directPressed(_ sender: Any) {
-        guard let feel = mimir.interpreter.getFeel(name: moodField.text!) else {
+        guard let emotion = mimir.getEmotion(name: moodField.text!) else {
+            suggestionLabel.text = "I'm not familiar with that emotion"
             return
         }
         let time = Double(timeSlider.value)
         
-        mimir.user.state = feel
-        if let suggestion = mimir.engine.suggestActivity(freeTime: time)  {
+        mimir.user.state = emotion.feel
+        if let suggestion = mimir.suggestActivity(freeTime: time)  {
             suggestionLabel.text = suggestion.name
         } else {
             suggestionLabel.text = "I can't help at the moment"

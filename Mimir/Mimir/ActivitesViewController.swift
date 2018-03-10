@@ -41,14 +41,14 @@ class ActivitesViewController: UIViewController, UITableViewDelegate, UITableVie
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return mimir.user.activities.count
+        return mimir.activities.count
     }
 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
-        cell.textLabel?.text = mimir.user.activities[indexPath.row].name
+        cell.textLabel?.text = mimir.activities[indexPath.row].name
 
         return cell
     }
@@ -66,8 +66,8 @@ class ActivitesViewController: UIViewController, UITableViewDelegate, UITableVie
     // Override to support editing the table view.
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            mimir.user.activities.remove(at: indexPath.row)
-            Store.storeActivities(activties: mimir.user.activities)
+            mimir.removeActivity(at: indexPath.row)
+            Store.storeActivities(activties: mimir.activities)
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
@@ -102,7 +102,6 @@ class ActivitesViewController: UIViewController, UITableViewDelegate, UITableVie
     
     @IBAction func unwindToActivitiesViewController(segue: UIStoryboardSegue){
         tableView.reloadData()
-        Store.storeActivities(activties: mimir.user.activities)
     }
  
 

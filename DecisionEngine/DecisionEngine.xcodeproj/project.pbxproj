@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7402AE912054969300F98686 /* Mimir.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7402AE902054969300F98686 /* Mimir.swift */; };
 		7431C538204C7D5200D6AD19 /* Feel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7431C537204C7D5200D6AD19 /* Feel.swift */; };
 		7431C53A204C81C400D6AD19 /* Emotion.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7431C539204C81C400D6AD19 /* Emotion.swift */; };
 		7431C53C204C83A600D6AD19 /* EmotionInterpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7431C53B204C83A600D6AD19 /* EmotionInterpreter.swift */; };
@@ -31,6 +32,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		7402AE902054969300F98686 /* Mimir.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mimir.swift; sourceTree = "<group>"; };
 		7431C537204C7D5200D6AD19 /* Feel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Feel.swift; sourceTree = "<group>"; };
 		7431C539204C81C400D6AD19 /* Emotion.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Emotion.swift; sourceTree = "<group>"; };
 		7431C53B204C83A600D6AD19 /* EmotionInterpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionInterpreter.swift; sourceTree = "<group>"; };
@@ -89,13 +91,14 @@
 			isa = PBXGroup;
 			children = (
 				74E80E8B2048FB3100D84453 /* Activity.swift */,
+				74E80E95204B53A600D84453 /* User.swift */,
+				7431C539204C81C400D6AD19 /* Emotion.swift */,
+				7431C537204C7D5200D6AD19 /* Feel.swift */,
+				7402AE902054969300F98686 /* Mimir.swift */,
 				74E80E8C2048FB3100D84453 /* DecisionEngine.swift */,
 				74E80E8A2048FB3000D84453 /* Helpers.swift */,
 				74E80E6A2048FA6C00D84453 /* DecisionEngine.h */,
 				74E80E6B2048FA6C00D84453 /* Info.plist */,
-				74E80E95204B53A600D84453 /* User.swift */,
-				7431C537204C7D5200D6AD19 /* Feel.swift */,
-				7431C539204C81C400D6AD19 /* Emotion.swift */,
 				7431C53B204C83A600D6AD19 /* EmotionInterpreter.swift */,
 			);
 			path = DecisionEngine;
@@ -237,6 +240,7 @@
 				74E80E96204B53A600D84453 /* User.swift in Sources */,
 				74E80E92204B2B0B00D84453 /* Extensions.swift in Sources */,
 				7431C53A204C81C400D6AD19 /* Emotion.swift in Sources */,
+				7402AE912054969300F98686 /* Mimir.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -8,17 +8,17 @@
 
 import Foundation
 
-public class EmotionInterpreter {
-    public var emotions: [Emotion]
+internal class EmotionInterpreter {
+    var emotions: [Emotion]
     
-    public init(emotions: [Emotion]) {
+    init(emotions: [Emotion]) {
         self.emotions = emotions
     }
     
-    public func getFeel(name: String) -> Feel? {
+    func getEmotion(name: String) -> Emotion? {
         for emotion in emotions{
             if(emotion.name.uppercased() == name.uppercased()){
-                return emotion.feel;
+                return emotion;
             }
         }
         return nil

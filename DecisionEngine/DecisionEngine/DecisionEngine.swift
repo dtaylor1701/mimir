@@ -9,17 +9,19 @@
 import Foundation
 
 
-public class DecisionEngine{
+internal class DecisionEngine{
     
     private var user: User
+    var activities: [Activity]
     
-    public init(user: User) {
+    init(user: User, activities: [Activity]) {
         self.user = user
+        self.activities = activities
     }
 
-    public func suggestActivity(freeTime: Double) -> Activity? {
+    func suggestActivity(freeTime: Double) -> Activity? {
         var possible = [Activity]()
-        for activity in self.user.activities{
+        for activity in self.activities{
             let hasTime = activity.duration <= freeTime
             let resultFeel = user.state + activity.impact
             let willImprove = user.state.average() < resultFeel.average()
@@ -28,7 +30,6 @@ public class DecisionEngine{
                 possible.append(activity)
             }
         }
-        
         return possible.random()
     }
 }

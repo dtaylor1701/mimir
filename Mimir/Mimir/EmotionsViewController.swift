@@ -41,14 +41,14 @@ class EmotionsViewController: UIViewController, UITableViewDelegate, UITableView
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return self.mimir.interpreter.emotions.count;
+        return self.mimir.emotions.count;
     }
 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
-        cell.textLabel?.text = self.mimir.interpreter.emotions[indexPath.row].name
+        cell.textLabel?.text = self.mimir.emotions[indexPath.row].name
 
         return cell
     }
@@ -66,8 +66,8 @@ class EmotionsViewController: UIViewController, UITableViewDelegate, UITableView
     // Override to support editing the table view.
     func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCellEditingStyle, forRowAt indexPath: IndexPath) {
         if editingStyle == .delete {
-            mimir.interpreter.emotions.remove(at: indexPath.row)
-            Store.storeEmotions(emotions: mimir.interpreter.emotions)
+            mimir.removeEmotion(at: indexPath.row)
+            Store.storeEmotions(emotions: mimir.emotions)
             tableView.deleteRows(at: [indexPath], with: .fade)
         } else if editingStyle == .insert {
             // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
@@ -102,8 +102,6 @@ class EmotionsViewController: UIViewController, UITableViewDelegate, UITableView
     
     @IBAction func unwindToEmotionsViewController(segue: UIStoryboardSegue){
         tableView.reloadData()
-        
-        Store.storeEmotions(emotions: mimir.interpreter.emotions)
     }
     
 
