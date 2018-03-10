@@ -118,6 +118,7 @@
 		74E80E1F2048EFB200D84453 /* Mimir */ = {
 			isa = PBXGroup;
 			children = (
+				742C58C9205222E800149A87 /* Mimir.swift */,
 				74E80E202048EFB200D84453 /* AppDelegate.swift */,
 				74E80E242048EFB200D84453 /* Main.storyboard */,
 				742C58C72052228800149A87 /* RootTabBarController.swift */,
@@ -131,7 +132,6 @@
 				74E80E2C2048EFB200D84453 /* LaunchScreen.storyboard */,
 				74E80E2F2048EFB200D84453 /* Info.plist */,
 				74E80E272048EFB200D84453 /* Mimir.xcdatamodeld */,
-				742C58C9205222E800149A87 /* Mimir.swift */,
 			);
 			path = Mimir;
 			sourceTree = "<group>";

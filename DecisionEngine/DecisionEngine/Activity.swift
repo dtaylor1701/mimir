@@ -14,7 +14,7 @@ public struct Activity : Codable {
     ///The change in feeling the activity imparts on the participant
     public var impact: Feel
     
-    init(name: String, duration: Double, feel: Feel = Feel.Neutral()){
+    public init(name: String, duration: Double, feel: Feel = Feel.Neutral()){
         self.name = name
         self.duration = duration
         self.impact = feel

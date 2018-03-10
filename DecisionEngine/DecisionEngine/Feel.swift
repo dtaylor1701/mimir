@@ -31,4 +31,9 @@ public struct Feel : Codable {
         return Feel(happy: 0.0, productive: 0.0)
     }
     
+    public init(happy: Double, productive: Double) {
+        self.happy = happy
+        self.productive = productive
+    }
+    
 }

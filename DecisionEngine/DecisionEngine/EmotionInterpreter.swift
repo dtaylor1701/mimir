@@ -9,7 +9,7 @@
 import Foundation
 
 public class EmotionInterpreter {
-    var emotions: [Emotion]
+    public var emotions: [Emotion]
     
     public init(emotions: [Emotion]) {
         self.emotions = emotions

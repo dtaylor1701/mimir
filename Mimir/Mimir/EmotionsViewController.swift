@@ -7,12 +7,19 @@
 //
 
 import UIKit
+import DecisionEngine
 
 class EmotionsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    var mimir: Mimir!
+
+    @IBOutlet weak var tableView: UITableView!
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
+        let rootController = self.tabBarController as! RootTabBarController
+        self.mimir = rootController.mimir
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -34,14 +41,14 @@ class EmotionsViewController: UIViewController, UITableViewDelegate, UITableView
 
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return 1
+        return self.mimir.interpreter.emotions.count;
     }
 
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
 
-        cell.textLabel?.text = "Test Emotion"
+        cell.textLabel?.text = self.mimir.interpreter.emotions[indexPath.row].name
 
         return cell
     }
@@ -82,14 +89,21 @@ class EmotionsViewController: UIViewController, UITableViewDelegate, UITableView
     }
     */
 
-    /*
+    
     // MARK: - Navigation
 
     // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+        if let destination = segue.destination as? AddEmotionViewController {
+            destination.mimir = mimir
+        }
     }
-    */
+    
+    @IBAction func unwindToEmotionsViewController(segue: UIStoryboardSegue){
+        tableView.reloadData()
+        
+        Store.storeEmotions(emotions: mimir.interpreter.emotions)
+    }
+    
 
 }

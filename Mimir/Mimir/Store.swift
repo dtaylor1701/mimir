@@ -9,12 +9,12 @@
 import Foundation
 import DecisionEngine
 
-class Store {
+class Store
+{
     private static let DocumentsDirectory = FileManager().urls(for: .documentDirectory, in: .userDomainMask).first!
     private static let activitiesURL = DocumentsDirectory.appendingPathComponent("activities")
     private static let emotionsURL = DocumentsDirectory.appendingPathComponent("emotions")
 
-    
     static func storeActivities(activties: [Activity]) {
         storeItem(item: activties, path: activitiesURL)
     }

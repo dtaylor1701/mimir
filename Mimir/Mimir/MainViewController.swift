@@ -12,20 +12,42 @@ import DecisionEngine
 class ViewController: UIViewController {
 
     @IBOutlet weak var suggestionLabel: UILabel!
-    @IBOutlet weak var inputField: UITextField!
+    @IBOutlet weak var moodField: UITextField!
+    @IBOutlet weak var timeSlider: UISlider!
+    @IBOutlet weak var timeLabel: UILabel!
     
     var mimir: Mimir!
     
     @IBAction func directPressed(_ sender: Any) {
+        guard let feel = mimir.interpreter.getFeel(name: moodField.text!) else {
+            return
+        }
+        let time = Double(timeSlider.value)
+        
+        mimir.user.state = feel
+        if let suggestion = mimir.engine.suggestActivity(freeTime: time)  {
+            suggestionLabel.text = suggestion.name
+        } else {
+            suggestionLabel.text = "I can't help at the moment"
+        }
         
     }
-
+    @IBAction func timeSliderChanged(_ sender: Any) {
+        let value = Int(timeSlider.value)
+        timeLabel.text = "\(value) minutes"
+        
+    }
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
         let rootController = self.tabBarController as! RootTabBarController
         self.mimir = rootController.mimir
         
+        timeSlider.maximumValue = 120;
+        timeSlider.minimumValue = 5;
+        timeSlider.value = 30;
+        timeLabel.text = "30 minutes"
         suggestionLabel.text = "Need some direction?"
     }
 
@@ -42,7 +64,8 @@ class ViewController: UIViewController {
         
     }
     
-    
-
+    @IBAction func unwindToMainViewController(segue: UIStoryboardSegue){
+        
+    }
 }
 

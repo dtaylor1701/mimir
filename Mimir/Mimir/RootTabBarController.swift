@@ -16,17 +16,29 @@ class RootTabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        if let activities = Store.retrieveActivtites(), let emotions = Store.retrieveEmotions()
+        var activities: [Activity]!
+        var emotions: [Emotion]!
+        
+        if let loaded = Store.retrieveActivtites()
         {
-            mimir = Mimir(activities: activities, emotions: emotions)
-
+            activities = loaded
         }
         else
         {
-            print("Could not load data from the store");
-            mimir = Mimir(activities: [Activity](), emotions: [Emotion]())
+            print("Could not load activity data from the store");
+            activities = [Activity]()
         }
         
+        if let loaded = Store.retrieveEmotions()
+        {
+            emotions = loaded
+        }
+        else
+        {
+            print("Could not load emotion data from the store");
+            emotions = [Emotion]()
+        }
+        mimir = Mimir(activities: activities, emotions: emotions)
         // Do any additional setup after loading the view.
     }
 
