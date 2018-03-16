@@ -48,20 +48,24 @@ class AddActivityViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        minutesSlider.maximumValue = 120
-        minutesSlider.minimumValue = 5
-        let value = Int(minutesSlider.value)
-        minutesLabel.text = "\(value) minutes"
-        
         happySlider.maximumValue = 10
         happySlider.minimumValue = -10
         happySlider.value = 0
+        
         productiveSlider.maximumValue = 10
-        productiveSlider.minimumValue = 10
+        productiveSlider.minimumValue = -10
         productiveSlider.value = 0
         
         happyLabel.text = "0"
         productiveLabel.text = "0"
+        
+        minutesSlider.maximumValue = 120
+        minutesSlider.minimumValue = 5
+        minutesSlider.value = 30
+        let value = Int(minutesSlider.value)
+        minutesLabel.text = "\(value) minutes"
+        
+        
 
         // Do any additional setup after loading the view.
     }

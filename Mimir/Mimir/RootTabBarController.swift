@@ -36,7 +36,7 @@ class RootTabBarController: UITabBarController {
         else
         {
             print("Could not load emotion data from the store");
-            emotions = [Emotion]()
+            emotions = Helpers.defaultEmotions()
         }
         mimir = Mimir(activities: activities, emotions: emotions)
         // Do any additional setup after loading the view.

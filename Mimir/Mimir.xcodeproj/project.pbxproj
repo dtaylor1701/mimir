@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7402AE92205A22E100F98686 /* DecisionEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E80E892048FAF700D84453 /* DecisionEngine.framework */; };
+		7402AE93205A22E100F98686 /* DecisionEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 74E80E892048FAF700D84453 /* DecisionEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		742C58C02050C6AA00149A87 /* AddActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C58BF2050C6AA00149A87 /* AddActivityViewController.swift */; };
 		742C58C220521C1500149A87 /* ActivitesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C58C120521C1500149A87 /* ActivitesViewController.swift */; };
 		742C58C420521C2400149A87 /* EmotionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C58C320521C2400149A87 /* EmotionsViewController.swift */; };
@@ -41,6 +43,20 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		7402AE94205A22E100F98686 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				7402AE93205A22E100F98686 /* DecisionEngine.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
 		742C58BF2050C6AA00149A87 /* AddActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityViewController.swift; sourceTree = "<group>"; };
 		742C58C120521C1500149A87 /* ActivitesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitesViewController.swift; sourceTree = "<group>"; };
@@ -71,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7402AE92205A22E100F98686 /* DecisionEngine.framework in Frameworks */,
 				74E80E93204B35B900D84453 /* DecisionEngine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -170,6 +187,7 @@
 				74E80E192048EFB200D84453 /* Sources */,
 				74E80E1A2048EFB200D84453 /* Frameworks */,
 				74E80E1B2048EFB200D84453 /* Resources */,
+				7402AE94205A22E100F98686 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);

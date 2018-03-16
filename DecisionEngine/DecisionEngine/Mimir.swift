@@ -13,35 +13,44 @@ public class Mimir{
     private var engine: DecisionEngine
     private var interpreter: EmotionInterpreter
     
-    public var activities: [Activity] {
+    public var activities: [Activity]
+    {
         return engine.activities
     }
-    public var emotions: [Emotion] {
+    public var emotions: [Emotion]
+    {
         return interpreter.emotions
     }
     
-    public init(activities: [Activity], emotions: [Emotion]) {
+    public init(activities: [Activity], emotions: [Emotion])
+    {
         self.user = User()
         self.engine = DecisionEngine(user: self.user, activities: activities)
         self.interpreter = EmotionInterpreter(emotions: emotions)
     }
     
-    public func addActivity(_ activity: Activity) {
+    public func addActivity(_ activity: Activity)
+    {
         engine.activities.append(activity)
     }
-    public func addEmotion(_ emotion: Emotion) {
+    public func addEmotion(_ emotion: Emotion)
+    {
         interpreter.emotions.append(emotion)
     }
-    public func removeActivity(at: Int){
+    public func removeActivity(at: Int)
+    {
         engine.activities.remove(at: at)
     }
-    public func removeEmotion(at: Int){
+    public func removeEmotion(at: Int)
+    {
         interpreter.emotions.remove(at: at)
     }
-    public func suggestActivity(freeTime: Double) -> Activity? {
+    public func suggestActivity(freeTime: Double) -> Activity?
+    {
         return engine.suggestActivity(freeTime: freeTime)
     }
-    public func getEmotion(name: String) -> Emotion? {
+    public func getEmotion(name: String) -> Emotion?
+    {
         return interpreter.getEmotion(name: name)
     }
 }

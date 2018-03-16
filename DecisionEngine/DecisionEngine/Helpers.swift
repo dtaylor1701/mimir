@@ -18,7 +18,7 @@ public class Helpers{
         return activities
     }
     
-    public static func testEmotions() -> [Emotion] {
+    public static func defaultEmotions() -> [Emotion] {
         var emotions = [Emotion]()
         emotions.append(Emotion(name: "Happy", feel: Feel(happy: 8, productive: 0)))
         emotions.append(Emotion(name: "Sad", feel: Feel(happy: -8, productive: 0)))
