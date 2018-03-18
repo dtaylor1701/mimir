@@ -16,8 +16,12 @@ public struct Feel : Codable {
     /// The feeling of accomplishment. Sedentary or frivolous things would have a negative value.
     var productive: Double
     
-    public func average() -> Double {
-        return (happy + productive) / 2
+    public static func resultant(current: Feel, impact: Feel) -> Double {
+        let finalState = current + impact
+        let happyTerm = componentTerm(component: finalState.happy, weight: 1.0)
+        let productiveTerm = componentTerm(component: finalState.productive, weight: 1.0)
+        return happyTerm + productiveTerm
+        
     }
     
     public static func +(left: Feel, right: Feel) -> Feel {
@@ -29,6 +33,17 @@ public struct Feel : Codable {
     
     public static func Neutral() -> Feel {
         return Feel(happy: 0.0, productive: 0.0)
+    }
+    
+    private static func componentTerm(component: Double, weight: Double) -> Double {
+        if(component < 0){
+            return weight * component * abs(component)
+
+        }
+        else {
+            return weight * sqrt(component)
+        }
+        
     }
     
     public init(happy: Double, productive: Double) {
