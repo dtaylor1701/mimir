@@ -121,6 +121,9 @@
                                             <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <segue destination="oCg-0H-R7p" kind="show" id="2GK-ND-Hve"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>
@@ -465,7 +468,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ppL-pP-R7I" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <exit id="e0m-2W-6ZA" userLabel="Exit" sceneMemberID="exit"/>
             </objects>
-            <point key="canvasLocation" x="1368.8" y="277.51124437781112"/>
+            <point key="canvasLocation" x="1468" y="-358"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="Vbb-XH-8j7">
+            <objects>
+                <viewController id="oCg-0H-R7p" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="iNA-oy-NpX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="KQO-ef-epv">
+                                <rect key="frame" x="166" y="20" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="AjY-6v-HKw" customClass="ActivityView" customModule="Mimir" customModuleProvider="target">
+                                <rect key="frame" x="16" y="122" width="343" height="239"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="AjY-6v-HKw" firstAttribute="leading" secondItem="iNA-oy-NpX" secondAttribute="leadingMargin" id="6t4-kI-gn7"/>
+                            <constraint firstItem="uPa-kc-Ulf" firstAttribute="bottom" secondItem="AjY-6v-HKw" secondAttribute="bottom" constant="306" id="Mc4-xr-4W9"/>
+                            <constraint firstItem="AjY-6v-HKw" firstAttribute="top" secondItem="KQO-ef-epv" secondAttribute="bottom" constant="81" id="ZIm-T9-T5X"/>
+                            <constraint firstItem="AjY-6v-HKw" firstAttribute="centerX" secondItem="KQO-ef-epv" secondAttribute="centerX" id="ndU-Li-bWr"/>
+                            <constraint firstItem="AjY-6v-HKw" firstAttribute="top" secondItem="iNA-oy-NpX" secondAttribute="top" constant="122" id="raX-ff-A7U"/>
+                            <constraint firstItem="AjY-6v-HKw" firstAttribute="trailing" secondItem="iNA-oy-NpX" secondAttribute="trailingMargin" id="yvR-fQ-mvA"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="uPa-kc-Ulf"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Y1j-lo-ZLC" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1468" y="336.88155922038982"/>
         </scene>
         <!--Root Tab Bar Controller-->
         <scene sceneID="FHQ-Dk-3HO">

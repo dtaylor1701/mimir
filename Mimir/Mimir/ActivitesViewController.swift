@@ -13,6 +13,8 @@ class ActivitesViewController: UIViewController, UITableViewDelegate, UITableVie
 
     var mimir: Mimir!
 
+    var selectedActtivity: Activity?
+    
     @IBOutlet weak var tableView: UITableView!
     
     override func viewDidLoad() {
@@ -98,6 +100,10 @@ class ActivitesViewController: UIViewController, UITableViewDelegate, UITableVie
         if let destination = segue.destination as? AddActivityViewController {
             destination.mimir = mimir
         }
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        //performSegue(withIdentifier: <#T##String#>, sender: self)
     }
     
     @IBAction func unwindToActivitiesViewController(segue: UIStoryboardSegue){

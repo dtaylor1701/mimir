@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7402AE92205A22E100F98686 /* DecisionEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E80E892048FAF700D84453 /* DecisionEngine.framework */; };
 		7402AE93205A22E100F98686 /* DecisionEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 74E80E892048FAF700D84453 /* DecisionEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		7402AE9F2061C57100F98686 /* ActivityView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7402AE9E2061C57100F98686 /* ActivityView.swift */; };
 		742C58C02050C6AA00149A87 /* AddActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C58BF2050C6AA00149A87 /* AddActivityViewController.swift */; };
 		742C58C220521C1500149A87 /* ActivitesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C58C120521C1500149A87 /* ActivitesViewController.swift */; };
 		742C58C420521C2400149A87 /* EmotionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C58C320521C2400149A87 /* EmotionsViewController.swift */; };
@@ -58,6 +59,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		7402AE9E2061C57100F98686 /* ActivityView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ActivityView.swift; path = UI/ActivityView.swift; sourceTree = SOURCE_ROOT; };
 		742C58BF2050C6AA00149A87 /* AddActivityViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddActivityViewController.swift; sourceTree = "<group>"; };
 		742C58C120521C1500149A87 /* ActivitesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivitesViewController.swift; sourceTree = "<group>"; };
 		742C58C320521C2400149A87 /* EmotionsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionsViewController.swift; sourceTree = "<group>"; };
@@ -109,9 +111,19 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		7402AE992060A4F000F98686 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				7402AE9E2061C57100F98686 /* ActivityView.swift */,
+			);
+			name = UI;
+			path = "New Group";
+			sourceTree = "<group>";
+		};
 		74E80E142048EFB200D84453 = {
 			isa = PBXGroup;
 			children = (
+				7402AE992060A4F000F98686 /* UI */,
 				74E80E1F2048EFB200D84453 /* Mimir */,
 				74E80E372048EFB200D84453 /* MimirTests */,
 				74E80E422048EFB200D84453 /* MimirUITests */,
@@ -315,6 +327,7 @@
 				74E80E232048EFB200D84453 /* MainViewController.swift in Sources */,
 				742C58C82052228800149A87 /* RootTabBarController.swift in Sources */,
 				742C58C220521C1500149A87 /* ActivitesViewController.swift in Sources */,
+				7402AE9F2061C57100F98686 /* ActivityView.swift in Sources */,
 				74E80E212048EFB200D84453 /* AppDelegate.swift in Sources */,
 				742C58C420521C2400149A87 /* EmotionsViewController.swift in Sources */,
 				742C58C620521C3D00149A87 /* AddEmotionViewController.swift in Sources */,
