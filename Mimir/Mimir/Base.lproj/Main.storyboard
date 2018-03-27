@@ -122,7 +122,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                         <connections>
-                                            <segue destination="oCg-0H-R7p" kind="show" id="2GK-ND-Hve"/>
+                                            <segue destination="oCg-0H-R7p" kind="show" identifier="activityDetail" id="2GK-ND-Hve"/>
                                         </connections>
                                     </tableViewCell>
                                 </prototypes>
@@ -470,10 +470,10 @@
             </objects>
             <point key="canvasLocation" x="1468" y="-358"/>
         </scene>
-        <!--View Controller-->
+        <!--Activity Details View Controller-->
         <scene sceneID="Vbb-XH-8j7">
             <objects>
-                <viewController id="oCg-0H-R7p" sceneMemberID="viewController">
+                <viewController id="oCg-0H-R7p" customClass="ActivityDetailsViewController" customModule="Mimir" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="iNA-oy-NpX">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

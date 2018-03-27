@@ -16,6 +16,7 @@
 		742C58C620521C3D00149A87 /* AddEmotionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C58C520521C3D00149A87 /* AddEmotionViewController.swift */; };
 		742C58C82052228800149A87 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C58C72052228800149A87 /* RootTabBarController.swift */; };
 		74457D6B204CEB34005CEB3E /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74457D6A204CEB34005CEB3E /* Store.swift */; };
+		74D194FD2069D566005D2B14 /* ActivityDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D194FC2069D566005D2B14 /* ActivityDetailsViewController.swift */; };
 		74E80E212048EFB200D84453 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E80E202048EFB200D84453 /* AppDelegate.swift */; };
 		74E80E232048EFB200D84453 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E80E222048EFB200D84453 /* MainViewController.swift */; };
 		74E80E262048EFB200D84453 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74E80E242048EFB200D84453 /* Main.storyboard */; };
@@ -66,6 +67,7 @@
 		742C58C520521C3D00149A87 /* AddEmotionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEmotionViewController.swift; sourceTree = "<group>"; };
 		742C58C72052228800149A87 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		74457D6A204CEB34005CEB3E /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		74D194FC2069D566005D2B14 /* ActivityDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailsViewController.swift; sourceTree = "<group>"; };
 		74E80E1D2048EFB200D84453 /* Mimir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mimir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E80E202048EFB200D84453 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		74E80E222048EFB200D84453 /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
@@ -151,6 +153,7 @@
 				74E80E222048EFB200D84453 /* MainViewController.swift */,
 				742C58C120521C1500149A87 /* ActivitesViewController.swift */,
 				742C58BF2050C6AA00149A87 /* AddActivityViewController.swift */,
+				74D194FC2069D566005D2B14 /* ActivityDetailsViewController.swift */,
 				742C58C320521C2400149A87 /* EmotionsViewController.swift */,
 				742C58C520521C3D00149A87 /* AddEmotionViewController.swift */,
 				74457D6A204CEB34005CEB3E /* Store.swift */,
@@ -329,6 +332,7 @@
 				742C58C220521C1500149A87 /* ActivitesViewController.swift in Sources */,
 				7402AE9F2061C57100F98686 /* ActivityView.swift in Sources */,
 				74E80E212048EFB200D84453 /* AppDelegate.swift in Sources */,
+				74D194FD2069D566005D2B14 /* ActivityDetailsViewController.swift in Sources */,
 				742C58C420521C2400149A87 /* EmotionsViewController.swift in Sources */,
 				742C58C620521C3D00149A87 /* AddEmotionViewController.swift in Sources */,
 				74E80E292048EFB200D84453 /* Mimir.xcdatamodeld in Sources */,
