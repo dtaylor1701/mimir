@@ -101,14 +101,14 @@ class ActivitesViewController: UIViewController, UITableViewDelegate, UITableVie
             destination.mimir = mimir
         }
         else if let detailsController = segue.destination as? ActivityDetailsViewController {
-            detailsController.activity = selectedActivity
+            detailsController.setActivity(selectedActivity!)
         }
         
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         selectedActivity = mimir.activities[indexPath.row]
-        performSegue(withIdentifier: "activityDetail", sender: self)
+        performSegue(withIdentifier: "activityDetail", sender: self.storyboard)
     }
     
     @IBAction func unwindToActivitiesViewController(segue: UIStoryboardSegue){

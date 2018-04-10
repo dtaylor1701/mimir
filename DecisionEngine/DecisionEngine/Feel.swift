@@ -11,10 +11,10 @@ import Foundation
 public struct Feel : Codable {
     
     /// Happiness and/or pleasure. A negative value woudl represent unhappiness.
-    var happy: Double
+    public var happy: Double
     
     /// The feeling of accomplishment. Sedentary or frivolous things would have a negative value.
-    var productive: Double
+    public var productive: Double
     
     public static func resultant(current: Feel, impact: Feel) -> Double {
         let finalState = current + impact
