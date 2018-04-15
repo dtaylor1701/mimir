@@ -113,6 +113,9 @@ class ActivitesViewController: UIViewController, UITableViewDelegate, UITableVie
     
     @IBAction func unwindToActivitiesViewController(segue: UIStoryboardSegue){
         tableView.reloadData()
+        if(segue.source is ActivityDetailsViewController){
+            Store.storeActivities(activties: mimir.activities)
+        }
     }
  
 

@@ -30,7 +30,7 @@ class ActivityDetailsViewController: UIViewController {
     @IBOutlet weak var durationLabel: UILabel!
     
     @IBAction func doneButtonPressed(_ sender: Any) {
-        if var selected = activity {
+        if let selected = activity {
             selected.name = nameField.text!
             selected.impact = Feel(happy: Double(happySlider.value), productive: Double(productiveSlider.value))
             selected.duration = Double(durationSlider.value)
