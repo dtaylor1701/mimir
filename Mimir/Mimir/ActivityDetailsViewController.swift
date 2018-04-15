@@ -15,6 +15,19 @@ class ActivityDetailsViewController: UIViewController {
     @IBOutlet weak var happySlider: UISlider!
     @IBOutlet weak var productiveSlider: UISlider!
     @IBOutlet weak var durationSlider: UISlider!
+    @IBAction func happySliderChanged(_ sender: Any) {
+        happyLabel.text = "\(Int(happySlider.value))"
+    }
+    @IBAction func productiveSliderChanged(_ sender: Any) {
+        productiveLabel.text = "\(Int(productiveSlider.value))"
+    }
+    @IBAction func durationSliderChanged(_ sender: Any) {
+        durationLabel.text = "\(Int(durationSlider.value))"
+
+    }
+    @IBOutlet weak var happyLabel: UILabel!
+    @IBOutlet weak var productiveLabel: UILabel!
+    @IBOutlet weak var durationLabel: UILabel!
     
     @IBAction func doneButtonPressed(_ sender: Any) {
         if var selected = activity {
@@ -32,7 +45,8 @@ class ActivityDetailsViewController: UIViewController {
         happySlider.maximumValue = 10
         productiveSlider.minimumValue = -10
         productiveSlider.maximumValue = 10
-        durationSlider.maximumValue = 270
+        durationSlider.maximumValue = 120
+        durationSlider.minimumValue = 5
         if let selected = activity{
             populateValues(with: selected)
         }
@@ -57,6 +71,10 @@ class ActivityDetailsViewController: UIViewController {
         self.happySlider.value = Float(activity.impact.happy)
         self.productiveSlider.value = Float(activity.impact.productive)
         self.durationSlider.value = Float(activity.duration)
+        happyLabel.text = "\(Int(happySlider.value))"
+        productiveLabel.text = "\(Int(productiveSlider.value))"
+        durationLabel.text = "\(Int(durationSlider.value))"
+
     }
     
     /*

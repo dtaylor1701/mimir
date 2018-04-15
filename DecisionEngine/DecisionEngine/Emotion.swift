@@ -8,11 +8,10 @@
 
 import Foundation
 
-public struct Emotion : Codable {
+public class Emotion : Codable {
     public var name: String
     /// The feeling of being this emotion
     public var feel: Feel
-    
     
     public init(name: String, feel: Feel) {
         self.name = name

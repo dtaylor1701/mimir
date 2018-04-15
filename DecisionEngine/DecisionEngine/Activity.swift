@@ -8,7 +8,7 @@
 
 import Foundation
 
-public struct Activity : Codable {
+public class Activity : Codable {
     public var name: String
     public var duration: Double
     ///The change in feeling the activity imparts on the participant
