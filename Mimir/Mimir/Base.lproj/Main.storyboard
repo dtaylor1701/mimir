@@ -607,13 +607,13 @@
                                     <action selector="productiveSliderChanged:" destination="oCg-0H-R7p" eventType="valueChanged" id="ruj-Lo-fXB"/>
                                 </connections>
                             </slider>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Productive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tny-7B-Acw">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Productive" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Tny-7B-Acw">
                                 <rect key="frame" x="16" y="222" width="83" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Happy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMT-Gl-BZF">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Happy" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="YMT-Gl-BZF">
                                 <rect key="frame" x="16" y="185" width="50" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -627,7 +627,7 @@
                                     <segue destination="lSk-Aa-GpM" kind="unwind" unwindAction="unwindToActivitiesViewControllerWithSegue:" id="Vew-xb-X41"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVM-FX-35e">
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Duration" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fVM-FX-35e">
                                 <rect key="frame" x="16" y="256" width="66" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -680,6 +680,7 @@
                             <constraint firstItem="Oa2-83-kLo" firstAttribute="top" secondItem="uPa-kc-Ulf" secondAttribute="top" constant="1" id="ijN-jI-KSr"/>
                             <constraint firstItem="KQO-ef-epv" firstAttribute="centerX" secondItem="uPa-kc-Ulf" secondAttribute="centerX" id="j8o-ho-2aM"/>
                             <constraint firstItem="hZN-Ww-UWl" firstAttribute="top" secondItem="uPa-kc-Ulf" secondAttribute="top" constant="123" id="mrF-vC-5CB"/>
+                            <constraint firstItem="YMT-Gl-BZF" firstAttribute="top" secondItem="hZN-Ww-UWl" secondAttribute="bottom" constant="12" id="opz-Gw-m4J"/>
                             <constraint firstItem="YMT-Gl-BZF" firstAttribute="leading" secondItem="uPa-kc-Ulf" secondAttribute="leading" constant="16" id="pN4-zg-LAR"/>
                             <constraint firstItem="tZv-K7-L1M" firstAttribute="top" secondItem="ecF-iR-oMQ" secondAttribute="bottom" constant="2" id="q21-cj-mKg"/>
                             <constraint firstItem="Tny-7B-Acw" firstAttribute="leading" secondItem="uPa-kc-Ulf" secondAttribute="leading" constant="16" id="se3-VG-eVW"/>
