@@ -12,6 +12,8 @@ import DecisionEngine
 class EmotionsViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     var mimir: Mimir!
+    
+    var selectedEmotion: Emotion?
 
     @IBOutlet weak var tableView: UITableView!
     
@@ -74,6 +76,11 @@ class EmotionsViewController: UIViewController, UITableViewDelegate, UITableView
         }    
     }
     
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        selectedEmotion = mimir.emotions[indexPath.row]
+        performSegue(withIdentifier: "emotionDetail", sender: self.storyboard)
+    }
+    
 
     /*
     // Override to support rearranging the table view.
@@ -97,11 +104,16 @@ class EmotionsViewController: UIViewController, UITableViewDelegate, UITableView
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if let destination = segue.destination as? AddEmotionViewController {
             destination.mimir = mimir
+        } else if let detailsController = segue.destination as? EmotionDetailsViewController {
+            detailsController.setEmotion(selectedEmotion!)
         }
     }
     
     @IBAction func unwindToEmotionsViewController(segue: UIStoryboardSegue){
         tableView.reloadData()
+        if(segue.source is EmotionDetailsViewController){
+            Store.storeEmotions(emotions: mimir.emotions)
+        }
     }
     
 
