@@ -2,6 +2,9 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:MimirDevelop/MimirDevelop.xcodeproj">
+   </FileRef>
+   <FileRef
       location = "group:Mimir/Mimir.xcodeproj">
    </FileRef>
    <FileRef

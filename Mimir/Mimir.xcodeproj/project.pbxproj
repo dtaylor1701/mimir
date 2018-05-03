@@ -7,8 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		7402AE92205A22E100F98686 /* DecisionEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E80E892048FAF700D84453 /* DecisionEngine.framework */; };
-		7402AE93205A22E100F98686 /* DecisionEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 74E80E892048FAF700D84453 /* DecisionEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		742C58C02050C6AA00149A87 /* AddActivityViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C58BF2050C6AA00149A87 /* AddActivityViewController.swift */; };
 		742C58C220521C1500149A87 /* ActivitesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C58C120521C1500149A87 /* ActivitesViewController.swift */; };
 		742C58C420521C2400149A87 /* EmotionsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C58C320521C2400149A87 /* EmotionsViewController.swift */; };
@@ -16,6 +14,9 @@
 		742C58C82052228800149A87 /* RootTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 742C58C72052228800149A87 /* RootTabBarController.swift */; };
 		7443F18720840BC100522370 /* EmotionDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7443F18620840BC100522370 /* EmotionDetailsViewController.swift */; };
 		74457D6B204CEB34005CEB3E /* Store.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74457D6A204CEB34005CEB3E /* Store.swift */; };
+		74C63517209A6AF500C0A180 /* DecisionEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74C63516209A6AF500C0A180 /* DecisionEngine.framework */; };
+		74C63519209A6B0200C0A180 /* DecisionEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74C63518209A6B0200C0A180 /* DecisionEngine.framework */; };
+		74C6351A209A6B0200C0A180 /* DecisionEngine.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 74C63518209A6B0200C0A180 /* DecisionEngine.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		74D194FD2069D566005D2B14 /* ActivityDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74D194FC2069D566005D2B14 /* ActivityDetailsViewController.swift */; };
 		74E80E212048EFB200D84453 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E80E202048EFB200D84453 /* AppDelegate.swift */; };
 		74E80E232048EFB200D84453 /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E80E222048EFB200D84453 /* MainViewController.swift */; };
@@ -25,7 +26,6 @@
 		74E80E2E2048EFB200D84453 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 74E80E2C2048EFB200D84453 /* LaunchScreen.storyboard */; };
 		74E80E392048EFB200D84453 /* MimirTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E80E382048EFB200D84453 /* MimirTests.swift */; };
 		74E80E442048EFB200D84453 /* MimirUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74E80E432048EFB200D84453 /* MimirUITests.swift */; };
-		74E80E93204B35B900D84453 /* DecisionEngine.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 74E80E94204B35B900D84453 /* DecisionEngine.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,13 +46,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		7402AE94205A22E100F98686 /* Embed Frameworks */ = {
+		74C6351B209A6B0200C0A180 /* Embed Frameworks */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				7402AE93205A22E100F98686 /* DecisionEngine.framework in Embed Frameworks */,
+				74C6351A209A6B0200C0A180 /* DecisionEngine.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -67,6 +67,8 @@
 		742C58C72052228800149A87 /* RootTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabBarController.swift; sourceTree = "<group>"; };
 		7443F18620840BC100522370 /* EmotionDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmotionDetailsViewController.swift; sourceTree = "<group>"; };
 		74457D6A204CEB34005CEB3E /* Store.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Store.swift; sourceTree = "<group>"; };
+		74C63516209A6AF500C0A180 /* DecisionEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DecisionEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		74C63518209A6B0200C0A180 /* DecisionEngine.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; path = DecisionEngine.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		74D194FC2069D566005D2B14 /* ActivityDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActivityDetailsViewController.swift; sourceTree = "<group>"; };
 		74E80E1D2048EFB200D84453 /* Mimir.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Mimir.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E80E202048EFB200D84453 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -91,8 +93,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7402AE92205A22E100F98686 /* DecisionEngine.framework in Frameworks */,
-				74E80E93204B35B900D84453 /* DecisionEngine.framework in Frameworks */,
+				74C63519209A6B0200C0A180 /* DecisionEngine.framework in Frameworks */,
+				74C63517209A6AF500C0A180 /* DecisionEngine.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -116,6 +118,7 @@
 		74E80E142048EFB200D84453 = {
 			isa = PBXGroup;
 			children = (
+				74C63518209A6B0200C0A180 /* DecisionEngine.framework */,
 				74E80E1F2048EFB200D84453 /* Mimir */,
 				74E80E372048EFB200D84453 /* MimirTests */,
 				74E80E422048EFB200D84453 /* MimirUITests */,
@@ -177,6 +180,7 @@
 		74E80E872048FAF700D84453 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				74C63516209A6AF500C0A180 /* DecisionEngine.framework */,
 				74E80E94204B35B900D84453 /* DecisionEngine.framework */,
 				74E80E892048FAF700D84453 /* DecisionEngine.framework */,
 			);
@@ -193,7 +197,7 @@
 				74E80E192048EFB200D84453 /* Sources */,
 				74E80E1A2048EFB200D84453 /* Frameworks */,
 				74E80E1B2048EFB200D84453 /* Resources */,
-				7402AE94205A22E100F98686 /* Embed Frameworks */,
+				74C6351B209A6B0200C0A180 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
@@ -247,7 +251,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0920;
-				LastUpgradeCheck = 0920;
+				LastUpgradeCheck = 0930;
 				ORGANIZATIONNAME = "Hyper Elephant";
 				TargetAttributes = {
 					74E80E1C2048EFB200D84453 = {
@@ -397,6 +401,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -404,6 +409,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -454,6 +460,7 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
 				CLANG_WARN_EMPTY_BODY = YES;
@@ -461,6 +468,7 @@
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
