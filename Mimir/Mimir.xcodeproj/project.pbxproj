@@ -44,6 +44,10 @@
 		74DEEB9520ACE3AC00D7FA5E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DEEB9320ACE3AC00D7FA5E /* Extensions.swift */; };
 		74DEEB9620ACE3AC00D7FA5E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DEEB9320ACE3AC00D7FA5E /* Extensions.swift */; };
 		74DEEB9720ACE3AC00D7FA5E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DEEB9320ACE3AC00D7FA5E /* Extensions.swift */; };
+		74DEEBA420ACF89D00D7FA5E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 74DEEBA020ACF89D00D7FA5E /* README.md */; };
+		74DEEBA520ACF89D00D7FA5E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 74DEEBA120ACF89D00D7FA5E /* LICENSE */; };
+		74DEEBA620ACF89D00D7FA5E /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DEEBA220ACF89D00D7FA5E /* Package.swift */; };
+		74DEEBA720ACF89D00D7FA5E /* Mimir.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 74DEEBA320ACF89D00D7FA5E /* Mimir.podspec */; };
 		8933C78E1EB5B82C000D00A4 /* MimirTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* MimirTests.swift */; };
 		8933C78F1EB5B82C000D00A4 /* MimirTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* MimirTests.swift */; };
 		8933C7901EB5B82D000D00A4 /* MimirTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* MimirTests.swift */; };
@@ -90,6 +94,10 @@
 		74DEEB7020ACE38000D7FA5E /* Emotion.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Emotion.swift; sourceTree = "<group>"; };
 		74DEEB7120ACE38000D7FA5E /* Mimir.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Mimir.swift; sourceTree = "<group>"; };
 		74DEEB9320ACE3AC00D7FA5E /* Extensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		74DEEBA020ACF89D00D7FA5E /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		74DEEBA120ACF89D00D7FA5E /* LICENSE */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
+		74DEEBA220ACF89D00D7FA5E /* Package.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Package.swift; sourceTree = "<group>"; };
+		74DEEBA320ACF89D00D7FA5E /* Mimir.podspec */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Mimir.podspec; sourceTree = "<group>"; };
 		8933C7891EB5B82A000D00A4 /* MimirTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MimirTests.swift; sourceTree = "<group>"; };
 		AD2FAA261CD0B6D800659CF4 /* Mimir.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Mimir.plist; sourceTree = "<group>"; };
 		AD2FAA281CD0B6E100659CF4 /* MimirTests.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = MimirTests.plist; sourceTree = "<group>"; };
@@ -156,6 +164,10 @@
 		52D6D9721BEFF229002C0205 = {
 			isa = PBXGroup;
 			children = (
+				74DEEBA120ACF89D00D7FA5E /* LICENSE */,
+				74DEEBA320ACF89D00D7FA5E /* Mimir.podspec */,
+				74DEEBA220ACF89D00D7FA5E /* Package.swift */,
+				74DEEBA020ACF89D00D7FA5E /* README.md */,
 				8933C7811EB5B7E0000D00A4 /* Sources */,
 				8933C7831EB5B7EB000D00A4 /* Tests */,
 				52D6D99C1BEFF38C002C0205 /* Configs */,
@@ -471,6 +483,9 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				74DEEBA720ACF89D00D7FA5E /* Mimir.podspec in Resources */,
+				74DEEBA520ACF89D00D7FA5E /* LICENSE in Resources */,
+				74DEEBA420ACF89D00D7FA5E /* README.md in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -529,6 +544,7 @@
 				74DEEB7A20ACE38000D7FA5E /* Helpers.swift in Sources */,
 				74DEEB8220ACE38000D7FA5E /* DecisionEngine.swift in Sources */,
 				74DEEB8E20ACE38000D7FA5E /* Mimir.swift in Sources */,
+				74DEEBA620ACF89D00D7FA5E /* Package.swift in Sources */,
 				74DEEB7E20ACE38000D7FA5E /* EmotionInterpreter.swift in Sources */,
 				74DEEB7220ACE38000D7FA5E /* Activity.swift in Sources */,
 				74DEEB8A20ACE38000D7FA5E /* Emotion.swift in Sources */,
