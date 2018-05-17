@@ -46,8 +46,8 @@
 		74DEEB9720ACE3AC00D7FA5E /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DEEB9320ACE3AC00D7FA5E /* Extensions.swift */; };
 		74DEEBA420ACF89D00D7FA5E /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 74DEEBA020ACF89D00D7FA5E /* README.md */; };
 		74DEEBA520ACF89D00D7FA5E /* LICENSE in Resources */ = {isa = PBXBuildFile; fileRef = 74DEEBA120ACF89D00D7FA5E /* LICENSE */; };
-		74DEEBA620ACF89D00D7FA5E /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DEEBA220ACF89D00D7FA5E /* Package.swift */; };
 		74DEEBA720ACF89D00D7FA5E /* Mimir.podspec in Resources */ = {isa = PBXBuildFile; fileRef = 74DEEBA320ACF89D00D7FA5E /* Mimir.podspec */; };
+		74DEEDB320AD036600D7FA5E /* Package.swift in Sources */ = {isa = PBXBuildFile; fileRef = 74DEEBA220ACF89D00D7FA5E /* Package.swift */; };
 		8933C78E1EB5B82C000D00A4 /* MimirTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* MimirTests.swift */; };
 		8933C78F1EB5B82C000D00A4 /* MimirTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* MimirTests.swift */; };
 		8933C7901EB5B82D000D00A4 /* MimirTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8933C7891EB5B82A000D00A4 /* MimirTests.swift */; };
@@ -544,7 +544,6 @@
 				74DEEB7A20ACE38000D7FA5E /* Helpers.swift in Sources */,
 				74DEEB8220ACE38000D7FA5E /* DecisionEngine.swift in Sources */,
 				74DEEB8E20ACE38000D7FA5E /* Mimir.swift in Sources */,
-				74DEEBA620ACF89D00D7FA5E /* Package.swift in Sources */,
 				74DEEB7E20ACE38000D7FA5E /* EmotionInterpreter.swift in Sources */,
 				74DEEB7220ACE38000D7FA5E /* Activity.swift in Sources */,
 				74DEEB8A20ACE38000D7FA5E /* Emotion.swift in Sources */,
@@ -601,6 +600,7 @@
 				74DEEB7B20ACE38000D7FA5E /* Helpers.swift in Sources */,
 				74DEEB8320ACE38000D7FA5E /* DecisionEngine.swift in Sources */,
 				74DEEB8F20ACE38000D7FA5E /* Mimir.swift in Sources */,
+				74DEEDB320AD036600D7FA5E /* Package.swift in Sources */,
 				74DEEB7F20ACE38000D7FA5E /* EmotionInterpreter.swift in Sources */,
 				74DEEB7320ACE38000D7FA5E /* Activity.swift in Sources */,
 				74DEEB8B20ACE38000D7FA5E /* Emotion.swift in Sources */,
