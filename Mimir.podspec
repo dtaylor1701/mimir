@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "Mimir"
-  s.version      = "1.0.1"
+  s.version      = "1.0.2"
   s.summary      = "Decision making helper in swift"
   s.description  = <<-DESC
     Mimir is designed to help you make decisions. Useful for those of us that are indecisive.

@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class User {
+open class User {
     public var state : Feel
 
     public init() {
