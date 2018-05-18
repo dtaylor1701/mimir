@@ -8,7 +8,7 @@
 
 import Foundation
 
-open class Emotion : Codable {
+public class Emotion : Codable {
     public var name: String
     /// The feeling of being this emotion
     public var feel: Feel

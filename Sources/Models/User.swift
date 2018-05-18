@@ -8,7 +8,8 @@
 
 import Foundation
 
-open class User {
+public class User : Codable {
+    public var id: UUID?
     public var state : Feel
 
     public init() {
