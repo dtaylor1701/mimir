@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class Activity : Codable {
+public final class Activity : Codable {
     public var id: UUID?
     public var name: String
     public var duration: Double

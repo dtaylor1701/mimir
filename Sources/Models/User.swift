@@ -8,7 +8,7 @@
 
 import Foundation
 
-public class User : Codable {
+public final class User : Codable {
     public var id: UUID?
     public var state : Feel
 
